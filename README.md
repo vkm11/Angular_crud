@@ -1,3 +1,45 @@
+
+# Angular_CRUD 
+
+1. Install Angular CLI
+:- npm i @angular/cli
+
+2. Create new Angular app
+:- ng new admin
+
+3. Angular material
+:- ng add @angular/material
+
+4. Run the app
+:- serve
+
+5. Generate common module -> layout
+:- ng g c module layout
+
+6. Generate common component
+:- ng g c header
+   ng g c sidebar
+   ng g c footer
+
+7. Import the common module -> layout into App Module
+ 
+src/app$ ng g module users
+cd users
+users$ ng g c add-user
+- ng g c edit-user
+- ng g c delete-user
+
+
+
+
+
+
+
+
+
+
+
+
 # Admin
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
