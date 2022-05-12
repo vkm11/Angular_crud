@@ -25,9 +25,15 @@
  
 src/app$ ng g module users
 cd users
-users$ ng g c add-user
+users$
+- ng g c list-users 
+- ng g c view-users
+- ng g c add-user
 - ng g c edit-user
 - ng g c delete-user
+
+
+
 
 
 
