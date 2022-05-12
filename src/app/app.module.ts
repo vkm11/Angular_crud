@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { LayoutModule } from './layout/layout.module';
+import { UsersModule } from './users/users.module';
+import { HttpClientModule } from '@angular/common/http';
+import { MatLineModule } from '@angular/material/core';
 @NgModule({
   declarations: [
     AppComponent
@@ -15,7 +18,10 @@ import { LayoutModule } from './layout/layout.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    LayoutModule
+    LayoutModule,
+    UsersModule, 
+    HttpClientModule,
+    MatLineModule
   ],
   providers: [],
   bootstrap: [AppComponent]

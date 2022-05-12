@@ -4,6 +4,8 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
 
+import {MatListModule} from '@angular/material/list';
+
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 @NgModule({
@@ -15,7 +17,8 @@ import {MatIconModule} from '@angular/material/icon';
   imports: [
     CommonModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatListModule
   ],
   exports: [
     HeaderComponent,
