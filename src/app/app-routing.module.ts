@@ -7,7 +7,6 @@ import { ListUsersComponent } from './users/list-users/list-users.component';
 import { ViewUserComponent } from './users/view-user/view-user.component';
 
 const routes: Routes = [
-  
   {
     path: 'users',
     children: [

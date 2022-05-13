@@ -13,11 +13,13 @@ import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import {MatButtonModule} from '@angular/material/button';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 @NgModule({
   declarations: [
     ViewUserComponent,
     AddUserComponent,
+   
     EditUserComponent,
     DeleteUserComponent,
     ListUsersComponent,
@@ -27,12 +29,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     RouterModule,
     MatListModule,
+    MatSnackBarModule,
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatButtonModule
     
   ]
 })
