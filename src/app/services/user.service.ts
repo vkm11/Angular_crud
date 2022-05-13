@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Identifiers } from '@angular/compiler/src/render3/r3_identifiers';
 
 @Injectable({
   providedIn: 'root'
@@ -12,5 +13,8 @@ export class UserService {
   listUsers(){
     return this.http.get(this.baseUrl + 'users');
 
+  }
+  viewUser(id: string){
+    return this.http.get(this.baseUrl + 'users/' + id);
   }
 }
