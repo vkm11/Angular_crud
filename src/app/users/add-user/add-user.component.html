@@ -1,1 +1,32 @@
-<p>add-user works!</p>
+<!-- <p>add-user works!</p> -->
+<mat-card>
+    <form [formGroup]='addUserForm' (submit)="createUser()">
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Username</mat-label>
+                <input matInput placeholder="Username" formControlName="username">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Email Address</mat-label>
+                <input matInput placeholder="Email Address" formControlName="email">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Phone Number</mat-label>
+                <input matInput placeholder="Phone Number" formControlName="phone">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+            </mat-form-field>
+        </p>
+    </form>
+
+</mat-card>

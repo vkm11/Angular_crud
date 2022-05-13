@@ -8,6 +8,11 @@ import { ListUsersComponent } from './list-users/list-users.component';
 import {MatListModule} from '@angular/material/list';
 import { RouterModule } from '@angular/router';
 import {MatCardModule} from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatIconModule} from '@angular/material/icon';
+import {FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +27,13 @@ import {MatCardModule} from '@angular/material/card';
     CommonModule,
     RouterModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
+    ReactiveFormsModule,
+    FormsModule
+    
   ]
 })
 export class UsersModule { }

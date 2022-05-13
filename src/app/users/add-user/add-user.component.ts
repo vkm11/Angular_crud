@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-add-user',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddUserComponent implements OnInit {
 
-  constructor() { }
+
+  addUserForm: FormGroup = new FormGroup({});
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
+    this.addUserForm = this.formBuilder.group({
+      'username': new FormControl(''),
+      'email': new FormControl(''),
+      'phone': new FormControl('')
+    });
+  }
+  createUser(){
+    console.log(this.addUserForm.value);
   }
 
 }
