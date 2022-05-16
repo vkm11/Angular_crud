@@ -36,6 +36,19 @@ users$
 
 
 
+* when you fill adduser form and submit then you can check network it is created successfully ore not 
+- status code is 201 then it is created sussfully it means resource created succssfully.
+
+- after submit the form alert msg is shown and automatic exit
+👍 then you have to write this code then it will be automatically exit
+
+users.module.ts:-
+
+import {MatSnackBarModule, MAT_SNACK_BAR_DEFAULT_OPTIONS} from '@angular/material/snack-bar';
+
+providers:[
+    { provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue:{duration:2500}}
+  ]
 
 
 
