@@ -11,10 +11,11 @@ import { UserService } from 'src/app/services/user.service';
 export class AddUserComponent implements OnInit {
 
   addUserForm: FormGroup = new FormGroup({});
+
   constructor(private formBuilder: FormBuilder,
     private userServices: UserService,
-    private _snackBar: MatSnackBar ) { }
-
+    private _snackBar: MatSnackBar) { }
+    
   ngOnInit(): void {
     this.addUserForm = this.formBuilder.group({
       'username': new FormControl(''),
@@ -25,11 +26,16 @@ export class AddUserComponent implements OnInit {
   createUser() {
     this.userServices.addUser(this.addUserForm.value).subscribe(data => {
       // console.log('user created');
-      this._snackBar.open("User created successfully");
+      this._snackBar.open('User created successfully');
+      
 
     }, err => {
       // console.log(err);
-      this._snackBar.open("Unable to create  user");
-    })
+      this._snackBar.open("Unable to create user");
+    });
   }
 }
+function successfully(User: any, created: any, successfully: any) {
+  throw new Error('Function not implemented.');
+}
+

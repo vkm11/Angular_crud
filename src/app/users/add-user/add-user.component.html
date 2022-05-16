@@ -32,7 +32,8 @@
             </p>
 
             <p>
-                <button mat-raised-button color="primary">Create User</button>
+                <button mat-raised-button color="primary" mat-stroked-button (click)="openSnackBar(this.addUserForm.value)">Create User</button>
+                <!-- <button mat-stroked-button (click)="openSnackBar(message.value, action.value)">Show snack-bar</button> -->
             </p>
         </form>
     </mat-card-content>

@@ -9,7 +9,7 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class ViewUserComponent implements OnInit {
 
-  userId: string = '';
+  userId: string = "";
   userDetails: any;
   constructor(private userService: UserService, private activatedRouter: ActivatedRoute) { }
 

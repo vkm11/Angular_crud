@@ -15,6 +15,7 @@ import {FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+
 @NgModule({
   declarations: [
     ViewUserComponent,
@@ -29,15 +30,16 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     CommonModule,
     RouterModule,
     MatListModule,
-    MatSnackBarModule,
+    
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
     ReactiveFormsModule,
     FormsModule,
-    MatButtonModule
-    
+    MatButtonModule,
+    MatSnackBarModule
+ 
   ]
 })
 export class UsersModule { }
